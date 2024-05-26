@@ -5,7 +5,10 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true
+        "**/Thumbs.db": true,
+        "web-scraping-app": true
     },
-    "hide-files.files": []
+    "hide-files.files": [
+        "web-scraping-app"
+    ]
 }
