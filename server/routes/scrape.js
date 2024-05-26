@@ -1,38 +1,46 @@
 const express = require('express');
-const axios = require('axios');
-const cheerio = require('cheerio');
+const scrapeInstitutions = require('./scrapeInstitutions');
+const scrapeTerms = require('./scrapeTerms');
+const scrapeSubjects = require('./scrapeSubjects');
+const scrapeSearchResults = require('./scrapeSearchResults');
 
 const router = express.Router();
 
 router.get('/', async (req, res) => {
   try {
-    // Form submission payload
-    const payload = new URLSearchParams({
-      selectedInstName: 'Baruch College',
-      inst_selection: 'BAR01',
-      selectedTermName: '2024 Fall Term',
-      term_value: '1249',
-      next_btn: 'Next'
-    });
+    // Step 1: Scrape institutions and terms
+    const institutions = await scrapeInstitutions();
+    const terms = await scrapeTerms();
 
-    // Send the form submission request
-    const response = await axios.post('https://globalsearch.cuny.edu/CFGlobalSearchTool/CFSearchToolController', payload, {
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      }
-    });
+    if (institutions.length === 0 || terms.length === 0) {
+      throw new Error('No institutions or terms found');
+    }
 
-    // Load the response HTML into cheerio
-    const $ = cheerio.load(response.data);
+    // Step 2: Use the first institution and term to find subjects
+    const firstInstitution = institutions[0];
+    const firstTerm = terms[0];
+    console.log(`Using institution: ${firstInstitution.name} (${firstInstitution.code})`);
+    console.log(`Using term: ${firstTerm.text} (${firstTerm.value})`);
 
-    // Scrape text from the select element with id 'subject_ld'
-    const subjects = [];
-    $('#subject_ld option').each((index, element) => {
-      subjects.push($(element).text().trim());
-    });
+    const subjects = await scrapeSubjects(firstInstitution.code, firstTerm.value);
 
-    // Send the scraped data as a response
-    res.json(subjects);
+    if (subjects.length === 0) {
+      throw new Error('No subjects found');
+    }
+
+    // Step 3: Use the first subject to scrape the search results
+    const firstSubject = subjects[0];
+    console.log(`Using subject: ${firstSubject.text} (${firstSubject.value})`);
+
+    const courses = await scrapeSearchResults(firstSubject);
+
+    // Check if courses were successfully scraped
+    if (!Array.isArray(courses) || courses.length === 0) {
+      throw new Error('No courses found');
+    }
+
+    // Send the combined JSON response
+    res.json({ institutions, terms, subjects, courses });
   } catch (error) {
     console.error('Scraping error:', error.message);
     res.status(500).json({ error: 'An error occurred while scraping', details: error.message });

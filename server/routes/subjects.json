@@ -1,0 +1,274 @@
+[
+  {
+    "value": "ACCT",
+    "text": "Accounting"
+  },
+  {
+    "value": "ASLG",
+    "text": "American Sign Language"
+  },
+  {
+    "value": "ANTH",
+    "text": "Anthropology"
+  },
+  {
+    "value": "ARAB",
+    "text": "Arabic"
+  },
+  {
+    "value": "ARTX",
+    "text": "Art"
+  },
+  {
+    "value": "ARNM",
+    "text": "Arts New Media"
+  },
+  {
+    "value": "ASAM",
+    "text": "Asian/Asian American Studies"
+  },
+  {
+    "value": "BIOL",
+    "text": "Biology"
+  },
+  {
+    "value": "BLST",
+    "text": "Black Studies"
+  },
+  {
+    "value": "BUSI",
+    "text": "Business"
+  },
+  {
+    "value": "BUAD",
+    "text": "Business Administration"
+  },
+  {
+    "value": "BUIT",
+    "text": "Business International"
+  },
+  {
+    "value": "BUPO",
+    "text": "Business Policy"
+  },
+  {
+    "value": "CHEM",
+    "text": "Chemistry"
+  },
+  {
+    "value": "CHIN",
+    "text": "Chinese"
+  },
+  {
+    "value": "COMM",
+    "text": "Communications"
+  },
+  {
+    "value": "COLI",
+    "text": "Comparative Literature"
+  },
+  {
+    "value": "CMIS",
+    "text": "Computer Information Systems"
+  },
+  {
+    "value": "COOP",
+    "text": "Cooperative Education"
+  },
+  {
+    "value": "ECON",
+    "text": "Economics"
+  },
+  {
+    "value": "ENGL",
+    "text": "English"
+  },
+  {
+    "value": "ENTR",
+    "text": "Entrepreneurship"
+  },
+  {
+    "value": "EVSC",
+    "text": "Environmental Science"
+  },
+  {
+    "value": "FILM",
+    "text": "Film"
+  },
+  {
+    "value": "FINA",
+    "text": "Finance"
+  },
+  {
+    "value": "ARFP",
+    "text": "Fine and Performing Arts"
+  },
+  {
+    "value": "FREN",
+    "text": "French"
+  },
+  {
+    "value": "FROR",
+    "text": "Freshman Orientation/ Seminar"
+  },
+  {
+    "value": "GEOG",
+    "text": "Geography"
+  },
+  {
+    "value": "HEBR",
+    "text": "Hebrew"
+  },
+  {
+    "value": "HIST",
+    "text": "History"
+  },
+  {
+    "value": "INSU",
+    "text": "Insurance"
+  },
+  {
+    "value": "INTE",
+    "text": "Interdisciplinary Studies"
+  },
+  {
+    "value": "ITAL",
+    "text": "Italian"
+  },
+  {
+    "value": "JAPA",
+    "text": "Japanese"
+  },
+  {
+    "value": "JAST",
+    "text": "Japanese Studies"
+  },
+  {
+    "value": "JWST",
+    "text": "Jewish Studies"
+  },
+  {
+    "value": "JOUR",
+    "text": "Journalism"
+  },
+  {
+    "value": "LACS",
+    "text": "Latin Amer/Caribbean Studi"
+  },
+  {
+    "value": "LAST",
+    "text": "Latin American Studies"
+  },
+  {
+    "value": "LAW",
+    "text": "Law"
+  },
+  {
+    "value": "LISC",
+    "text": "Library Science"
+  },
+  {
+    "value": "MAOM",
+    "text": "Maintenance of Matriculation"
+  },
+  {
+    "value": "MANA",
+    "text": "Management"
+  },
+  {
+    "value": "MARK",
+    "text": "Marketing"
+  },
+  {
+    "value": "MATH",
+    "text": "Mathematics"
+  },
+  {
+    "value": "MUSI",
+    "text": "Music"
+  },
+  {
+    "value": "ONFI",
+    "text": "On File"
+  },
+  {
+    "value": "OPRE",
+    "text": "Operation Research"
+  },
+  {
+    "value": "OPMA",
+    "text": "Operations Management"
+  },
+  {
+    "value": "PERM",
+    "text": "Permit"
+  },
+  {
+    "value": "PHIL",
+    "text": "Philosophy"
+  },
+  {
+    "value": "PHED",
+    "text": "Physical Education"
+  },
+  {
+    "value": "PHYS",
+    "text": "Physics"
+  },
+  {
+    "value": "POSC",
+    "text": "Political Science"
+  },
+  {
+    "value": "PORT",
+    "text": "Portuguese"
+  },
+  {
+    "value": "PSYC",
+    "text": "Psychology"
+  },
+  {
+    "value": "PUAF",
+    "text": "Public Affairs"
+  },
+  {
+    "value": "QUME",
+    "text": "Quantitative Methods"
+  },
+  {
+    "value": "REES",
+    "text": "Real Estate"
+  },
+  {
+    "value": "RELI",
+    "text": "Religion Studies"
+  },
+  {
+    "value": "SOCI",
+    "text": "Sociology"
+  },
+  {
+    "value": "SPAN",
+    "text": "Spanish"
+  },
+  {
+    "value": "STAT",
+    "text": "Statistics"
+  },
+  {
+    "value": "TAXA",
+    "text": "Taxation"
+  },
+  {
+    "value": "THEA",
+    "text": "Theater"
+  },
+  {
+    "value": "TROR",
+    "text": "Transfer Orientation"
+  },
+  {
+    "value": "WKST",
+    "text": "Work Study"
+  }
+]

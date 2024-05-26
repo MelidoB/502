@@ -1,0 +1,106 @@
+[
+  {
+    "code": "BAR01",
+    "name": "Baruch College"
+  },
+  {
+    "code": "BMC01",
+    "name": "Borough of Manhattan CC"
+  },
+  {
+    "code": "BCC01",
+    "name": "Bronx CC"
+  },
+  {
+    "code": "BKL01",
+    "name": "Brooklyn College"
+  },
+  {
+    "code": "CTY01",
+    "name": "City College"
+  },
+  {
+    "code": "CSI01",
+    "name": "College of Staten Island"
+  },
+  {
+    "code": "GRD01",
+    "name": "Graduate Center"
+  },
+  {
+    "code": "NCC01",
+    "name": "Guttman CC"
+  },
+  {
+    "code": "HOS01",
+    "name": "Hostos CC"
+  },
+  {
+    "code": "HTR01",
+    "name": "Hunter College"
+  },
+  {
+    "code": "JJC01",
+    "name": "John Jay College"
+  },
+  {
+    "code": "KCC01",
+    "name": "Kingsborough CC"
+  },
+  {
+    "code": "LAG01",
+    "name": "LaGuardia CC"
+  },
+  {
+    "code": "LEH01",
+    "name": "Lehman College"
+  },
+  {
+    "code": "MHC01",
+    "name": "Macaulay Honors College"
+  },
+  {
+    "code": "MEC01",
+    "name": "Medgar Evers College"
+  },
+  {
+    "code": "NYT01",
+    "name": "NYC College of Technology"
+  },
+  {
+    "code": "QNS01",
+    "name": "Queens College"
+  },
+  {
+    "code": "QCC01",
+    "name": "Queensborough CC"
+  },
+  {
+    "code": "SOJ01",
+    "name": "School of Journalism"
+  },
+  {
+    "code": "SLU01",
+    "name": "School of Labor&Urban Studies"
+  },
+  {
+    "code": "LAW01",
+    "name": "School of Law"
+  },
+  {
+    "code": "MED01",
+    "name": "School of Medicine"
+  },
+  {
+    "code": "SPS01",
+    "name": "School of Professional Studies"
+  },
+  {
+    "code": "SPH01",
+    "name": "School of Public Health"
+  },
+  {
+    "code": "YRK01",
+    "name": "York College"
+  }
+]
