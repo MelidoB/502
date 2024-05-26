@@ -50,6 +50,8 @@ function handleResponse(response) {
     }
   });
 
+  console.log('Results:', results);
+
   // Define the path to the JSON file
   const filePath = path.join(__dirname, 'searchResults.json');
 
