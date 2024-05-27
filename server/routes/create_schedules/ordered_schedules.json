@@ -1,0 +1,80 @@
+[
+  {
+    "schedule": [
+      {
+        "classNumber": "25370",
+        "section": "TTRA-LEC Regular",
+        "courseTopic": "ACC 3100 - Financial Accounting II",
+        "daysAndTimes": "TuTh 7:45PM - 9:25PM",
+        "room": "B - Vert 11-155",
+        "instructors": "D Edward Martin",
+        "instructionMode": "In Person",
+        "meetingDates": "08/28/2024 - 12/21/2024",
+        "status": "Closed",
+        "identifier": "contentDivImg4",
+        "overallRating": 5,
+        "numRatings": 127,
+        "wouldTakeAgain": 76,
+        "difficulty": 4.3,
+        "profileUrl": "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=287655"
+      },
+      {
+        "classNumber": "26151",
+        "section": "HTRA-LEC Regular",
+        "courseTopic": "ACC 3200 - Cost Accounting",
+        "daysAndTimes": "TuTh 9:55AM - 11:35AM",
+        "room": "Online-Synchronous",
+        "instructors": "Heedong Kim",
+        "instructionMode": "Online Synchronous",
+        "meetingDates": "08/28/2024 - 12/21/2024",
+        "status": "Closed",
+        "identifier": "contentDivImg5",
+        "overallRating": 2.9,
+        "numRatings": 20,
+        "wouldTakeAgain": 57,
+        "difficulty": 4.8,
+        "profileUrl": "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2495131"
+      }
+    ],
+    "overallRatingSum": 7.9
+  },
+  {
+    "schedule": [
+      {
+        "classNumber": "25370",
+        "section": "TTRA-LEC Regular",
+        "courseTopic": "ACC 3100 - Financial Accounting II",
+        "daysAndTimes": "TuTh 7:45PM - 9:25PM",
+        "room": "B - Vert 11-155",
+        "instructors": "D Edward Martin",
+        "instructionMode": "In Person",
+        "meetingDates": "08/28/2024 - 12/21/2024",
+        "status": "Closed",
+        "identifier": "contentDivImg4",
+        "overallRating": 5,
+        "numRatings": 127,
+        "wouldTakeAgain": 76,
+        "difficulty": 4.3,
+        "profileUrl": "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=287655"
+      },
+      {
+        "classNumber": "26152",
+        "section": "KTRA-LEC Regular",
+        "courseTopic": "ACC 3200 - Cost Accounting",
+        "daysAndTimes": "TuTh 2:55PM - 4:35PM",
+        "room": "Online-Synchronous",
+        "instructors": "Heedong Kim",
+        "instructionMode": "Online Synchronous",
+        "meetingDates": "08/28/2024 - 12/21/2024",
+        "status": "Closed",
+        "identifier": "contentDivImg5",
+        "overallRating": 2.9,
+        "numRatings": 20,
+        "wouldTakeAgain": 57,
+        "difficulty": 4.8,
+        "profileUrl": "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2495131"
+      }
+    ],
+    "overallRatingSum": 7.9
+  }
+]

@@ -1,0 +1,123 @@
+[
+    {
+      "code": "BAR01",
+      "name": "Baruch College",
+      "rmp_id": 222
+    },
+    {
+      "code": "BMC01",
+      "name": "Borough of Manhattan CC",
+      "rmp_id": 18470
+    },
+    {
+      "code": "BCC01",
+      "name": "Bronx CC",
+      "rmp_id": 4257
+    },
+    {
+      "code": "BKL01",
+      "name": "Brooklyn College",
+      "rmp_id": 223
+    },
+    {
+      "code": "CTY01",
+      "name": "City College",
+      "rmp_id": 224
+    },
+    {
+      "code": "CSI01",
+      "name": "College of Staten Island",
+      "rmp_id": 225
+    },
+    {
+      "code": "GRD01",
+      "name": "Graduate Center",
+      "rmp_id": 5060
+    },
+    {
+      "code": "NCC01",
+      "name": "Guttman CC",
+      "rmp_id": 16756
+    },
+    {
+      "code": "HOS01",
+      "name": "Hostos CC",
+      "rmp_id": 5136
+    },
+    {
+      "code": "HTR01",
+      "name": "Hunter College",
+      "rmp_id": 18469
+    },
+    {
+      "code": "JJC01",
+      "name": "John Jay College",
+      "rmp_id": 227
+    },
+    {
+      "code": "KCC01",
+      "name": "Kingsborough CC",
+      "rmp_id": 4105
+    },
+    {
+      "code": "LAG01",
+      "name": "LaGuardia CC",
+      "rmp_id": 4269
+    },
+    {
+      "code": "LEH01",
+      "name": "Lehman College",
+      "rmp_id": 228
+    },
+    {
+      "code": "MEC01",
+      "name": "Medgar Evers College",
+      "rmp_id": 229
+    },
+    {
+      "code": "NYT01",
+      "name": "NYC College of Technology",
+      "rmp_id": 230
+    },
+    {
+      "code": "QNS01",
+      "name": "Queens College",
+      "rmp_id": 231
+    },
+    {
+      "code": "QCC01",
+      "name": "Queensborough CC",
+      "rmp_id": 4141
+    },
+    {
+      "code": "SOJ01",
+      "name": "School of Journalism",
+      "rmp_id": 17638
+    },
+    {
+      "code": "SLU01",
+      "name": "School of Labor&Urban Studies",
+      "rmp_id": 17785
+    },
+    {
+      "code": "LAW01",
+      "name": "School of Law",
+      "rmp_id": 5176
+    },
+    {
+      "code": "SPS01",
+      "name": "School of Professional Studies",
+      "rmp_id": 5673
+    },
+    {
+      "code": "SPH01",
+      "name": "School of Public Health",
+      "rmp_id": 17230
+    },
+    {
+      "code": "YRK01",
+      "name": "York College",
+      "rmp_id": 13771
+    }
+  ]
+  
