@@ -1,7 +1,11 @@
-const axios = require('axios');
+// scrapeSubjects.js
+const client = require('./sharedAxios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
+
+// Function to create a delay
+const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 async function scrapeSubjects(instCode, termValue) {
   try {
@@ -12,8 +16,11 @@ async function scrapeSubjects(instCode, termValue) {
       next_btn: 'Next'
     });
 
+    // Add a small delay before making the request
+    await delay(1000); // 1 second delay
+
     // Send the POST request with the payload
-    const response = await axios.post('https://globalsearch.cuny.edu/CFGlobalSearchTool/CFSearchToolController', payload, {
+    const response = await client.post('https://globalsearch.cuny.edu/CFGlobalSearchTool/CFSearchToolController', payload, {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
       }

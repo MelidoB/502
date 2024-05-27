@@ -1,3 +1,4 @@
+// scrape.js
 const express = require('express');
 const scrapeInstitutions = require('./scrapeInstitutions');
 const scrapeTerms = require('./scrapeTerms');
@@ -16,6 +17,10 @@ router.get('/', async (req, res) => {
       throw new Error('No institutions or terms found');
     }
 
+    // Log institutions and terms for debugging
+    console.log('Institutions:', institutions);
+    console.log('Terms:', terms);
+
     // Step 2: Use the first institution and term to find subjects
     const firstInstitution = institutions[0];
     const firstTerm = terms[0];
@@ -27,6 +32,9 @@ router.get('/', async (req, res) => {
     if (subjects.length === 0) {
       throw new Error('No subjects found');
     }
+
+    // Log subjects for debugging
+    console.log('Subjects:', subjects);
 
     // Step 3: Use the first subject to scrape the search results
     const firstSubject = subjects[0];
