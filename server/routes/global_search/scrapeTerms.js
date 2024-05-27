@@ -1,10 +1,11 @@
-const axios = require('axios');
+// scrapeTerms.js
+const client = require('./sharedAxios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
 async function scrapeTerms() {
-  const response = await axios.get('https://globalsearch.cuny.edu/CFGlobalSearchTool/search.jsp');
+  const response = await client.get('https://globalsearch.cuny.edu/CFGlobalSearchTool/search.jsp');
   const $ = cheerio.load(response.data);
 
   const terms = [];

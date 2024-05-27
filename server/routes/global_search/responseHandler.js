@@ -1,8 +1,12 @@
+// responseHandler.js
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
-function handleResponse(response) {
+// Function to create a delay
+const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+async function handleResponse(response) {
   const $ = cheerio.load(response.data);
   const results = [];
 
@@ -13,14 +17,21 @@ function handleResponse(response) {
     courseNames.push(courseName);
   });
 
- // Remove the first 3 elements
- courseNames.splice(0, 1);
+  // Remove the first element
+  courseNames.splice(0, 1);
+
+  // Log course names for debugging
+  console.log('Course names:', courseNames);
+
   // Extract course data
-  $('div[id^="contentDivImg"]').each((divIndex, divElement) => { 
+  for (let divIndex = 0; divIndex < $('div[id^="contentDivImg"]').length; divIndex++) {
+    const divElement = $('div[id^="contentDivImg"]')[divIndex];
     if (!divElement.attribs.id.includes('_inst')) {
       const courseName = courseNames[divIndex]; // Get the full course name for this div
-      $(divElement).find('.classinfo tbody').each((tbodyIndex, tbodyElement) => {
-        $(tbodyElement).find('tr').each((index, element) => {
+      for (let tbodyIndex = 0; tbodyIndex < $(divElement).find('.classinfo tbody').length; tbodyIndex++) {
+        const tbodyElement = $(divElement).find('.classinfo tbody')[tbodyIndex];
+        for (let index = 0; index < $(tbodyElement).find('tr').length; index++) {
+          const element = $(tbodyElement).find('tr')[index];
           const classNumber = $(element).find('td[data-label="Class"] a').text().trim();
           const section = $(element).find('td[data-label="Section"]').text().trim();
           const daysAndTimes = $(element).find('td[data-label="DaysAndTimes"]').text().trim();
@@ -45,10 +56,11 @@ function handleResponse(response) {
             status,
             identifier: `contentDivImg${divIndex}`
           });
-        });
-      });
+        }
+        await delay(100); // Add a 100ms delay between each tbody processing
+      }
     }
-  });
+  }
 
   console.log('Results:', results);
 
